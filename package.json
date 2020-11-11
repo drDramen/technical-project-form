@@ -1,0 +1,33 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^2.1.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+	"devDependencies": {},
+
+	"scripts": {
+		"stylelint": "stylelint **/*{.css,.scss} --config ./.stylelintrc.json",
+		"format:css": "prettier --write **/*{.css,.scss} && stylelint **/*{.css,.scss} --fix --config ./.stylelintrc.json"
+	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drDramen/technical-project-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drDramen/technical-project-form/issues"
+  },
+  "homepage": "https://github.com/drDramen/technical-project-form#readme"
+}
