@@ -1,11 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="/css/font.css">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Document</title>
+	</head>
+
+	<body>
+
+		<main class="wrapper">
+
+			<section>
+				<h2>Form 1. Placeholders.</h2>
+				<form class="form-1">
+					<input type="text" name="name" placeholder="Input your Name">
+					<input type="email" name="email" placeholder="Input your E-mail">
+					<input type="password" name="password" placeholder="Input Password">
+					<textarea name="message" placeholder="Input Message"></textarea>
+					<input class="submit" type="submit" value="Submit">
+				</form>
+			</section>
+
+			<section>
+				<h2>Form 2. In Table.</h2>
+				<form class="form-2">
+					<table>
+						<tr>
+							<td>Input your Name</td>
+							<td><input type="text" name="name"></td>
+						</tr>
+						<tr>
+							<td>Input your E-mail</td>
+							<td><input type="email" name="email"></td>
+						</tr>
+						<tr>
+							<td>Input Password</td>
+							<td><input class="disabled" type="password" name="password" disabled></td>
+						</tr>
+						<tr>
+							<td class="textarea">Input Message</td>
+							<td><textarea class="disabled" name="message" disabled></textarea></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input class="submit" type="submit" value="Submit"></td>
+						</tr>
+					</table>
+				</form>
+			</section>
+
+			<section>
+				<h2>Form 3. Without table.</h2>
+				<form class="form-3">
+					<label>
+						Input your Name
+						<input class="focus" type="text" name="name">
+					</label>
+					<label>
+						Input your E-mail
+						<input class="focus" type="email" name="email">
+					</label>
+					<label>
+						Input Password
+						<input class="focus" type="password" name="password">
+					</label>
+					<label class="label-textarea">
+						<span>Input Message</span>
+						<textarea class="focus" name="message"></textarea>
+					</label>
+					<input class="submit" type="submit" value="Submit">
+				</form>
+
+			</section>
+
+			<section class="fixed-block">
+				<h2>Form 4. In fixed block.</h2>
+				<div class="inner-wrap">
+					<form class="form-4 clear-fix">
+						<label for="email">E-mail</label>
+						<input id="email" type="email" name="email">
+						<label for="password">Password</label>
+						<input id="password" type="password" name="password">
+						<div class="container">
+							<input class="submit" type="submit" value="Log in">
+							<a class="link" href="#">Sign up</a>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section>
+				<h2>Form 5. With styles.</h2>
+				<form class="form-5">
+					<label>
+						Input your Name
+
+						<span class="fas fa-user fa-lg"><input class="green-border" type="text" name="name"
+								value="John Smith"></span>
+						<!-- <i class="fas fa-user"></i> -->
+					</label>
+					<label>Input your E-mail<input class="blue-border" type="email" name="email"
+							value="smith@corpmail.com"></label>
+					<label class="label-textarea">
+						<span>Input Message</span>
+						<span class="form-5__textarea">
+							<textarea
+								name="message">Hello Dear Admin! I like your site!!! It’s awesome! I am a Nigerian prince and I hope that you...</textarea>
+							<i class="icon-msg"></i>
+						</span>
+					</label>
+					<input class="submit" type="submit" value="Send">
+				</form>
+			</section>
+
+			<section>
+				<h2>Form 6. Search.</h2>
+
+				<form class="form-6__1">
+					<input type="search" name="search">
+					<input type="submit" value="Search">
+				</form>
+
+				<form class="form-6__2">
+					<input type="search" name="search">
+					<input type="submit" value="">
+				</form>
+
+				<form>
+					<input type="search" name="search">
+				</form>
+			</section>
+
+			<section>
+				<h2>Form 7. Checkboxes and Radiobuttons.</h2>
+				<form class="form-7">
+					<label><input type="checkbox" name="like"> I like horses</label>
+					<label><input type="checkbox" name="like"> I like unicorns</label>
+					<label><input type="checkbox" name="like" checked> I like pegasus</label>
+					<label><input type="checkbox" name="like" checked disabled> Colored ponies (do not discuss)</label>
+
+					<fieldset>
+						<legend>Animals</legend>
+						<label><input type="radio" name="Animals"> Horse is the best</label>
+						<label><input type="radio" name="Animals"> Unicorn is the best</label>
+						<label><input type="radio" name="Animals"> Pegasus is the best</label>
+						<label><input type="radio" name="Animals"> Sorry, but your turtle was died</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>AI</legend>
+						<label><input type="radio" name="Animals"> R2D2</label>
+						<label><input type="radio" name="Animals"> GLaDOS</label>
+						<label><input type="radio" name="Animals"> SkyNet</label>
+						<label><input type="radio" name="Animals"> V.I.K.I.</label>
+					</fieldset>
+
+					<table>
+						<thead>
+							<tr>
+								<td rowspan="2">Food</td>
+								<td colspan="5">Rating</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Vareniks</td>
+								<td><input type="radio" name="Vareniks" value="1"></td>
+								<td><input type="radio" name="Vareniks" value="2"></td>
+								<td><input type="radio" name="Vareniks" value="3"></td>
+								<td><input type="radio" name="Vareniks" value="4"></td>
+								<td><input type="radio" name="Vareniks" value="botb"></td>
+							</tr>
+							<tr>
+								<td>Borsch</td>
+								<td><input type="radio" name="Borsch" value="1"></td>
+								<td><input type="radio" name="Borsch" value="2"></td>
+								<td><input type="radio" name="Borsch" value="3"></td>
+								<td><input type="radio" name="Borsch" value="4"></td>
+								<td><input type="radio" name="Borsch" value="botb"></td>
+							</tr>
+							<tr>
+								<td>Hot Dog</td>
+								<td><input type="radio" name="Hot Dog" value="1"></td>
+								<td><input type="radio" name="Hot Dog" value="2"></td>
+								<td><input type="radio" name="Hot Dog" value="3"></td>
+								<td><input type="radio" name="Hot Dog" value="4"></td>
+								<td><input type="radio" name="Hot Dog" value="botb"></td>
+							</tr>
+							<tr>
+								<td>Tiramisu</td>
+								<td><input type="radio" name="Tiramisu" value="1"></td>
+								<td><input type="radio" name="Tiramisu" value="2"></td>
+								<td><input type="radio" name="Tiramisu" value="3"></td>
+								<td><input type="radio" name="Tiramisu" value="4"></td>
+								<td><input type="radio" name="Tiramisu" value="botb"></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h3>Checked</h3>
+					<div class="r-b1">
+						<label><input type="radio" name="r-b1">unchecked</label>
+						<label><input type="radio" name="r-b1" checked>checked</label>
+					</div>
+					<div class="r-b2">
+						<label><input type="radio" name="r-b2">unchecked</label>
+						<label><input type="radio" name="r-b2" checked>checked</label>
+					</div>
+					<div class="ch-b1">
+						<label><input type="checkbox" name="ch-b1">unchecked</label>
+						<label><input type="checkbox" name="ch-b1" checked>checked</label>
+					</div>
+					<div class="ch-b2">
+						<label><input type="checkbox" name="ch-b2">unchecked</label>
+						<label><input type="checkbox" name="ch-b2" checked>checked</label>
+					</div>
+
+					<ul>
+						<li>
+							<label><input type="radio" name="r-list">blue</label>
+							<ul>
+								<li><label><input type="radio" name="r-sublist">deep blue</label></li>
+								<li><label><input type="radio" name="r-sublist">sky blue</label></li>
+							</ul>
+						</li>
+						<li><label><input type="radio" name="r-list" checked>blue</label></li>
+					</ul>
+
+					<div class="radio-style-icon">
+						<label><input type="radio" name="r-s1">unchecked</label>
+						<label><input type="radio" name="r-s1">unchecked</label>
+						<label><input type="radio" name="r-b1" checked>checked</label>
+					</div>
+				</form>
+			</section>
+
+
+
+		</main>
+
+	</body>
+
 </html>
