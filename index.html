@@ -24,7 +24,7 @@
 					<input type="email" name="email" placeholder="Input your E-mail">
 					<input type="password" name="password" placeholder="Input Password">
 					<textarea name="message" placeholder="Input Message"></textarea>
-					<input class="submit" type="submit" value="Submit">
+					<input class="btn" type="submit" value="Submit">
 				</form>
 			</section>
 
@@ -50,7 +50,7 @@
 						</tr>
 						<tr>
 							<td></td>
-							<td><input class="submit" type="submit" value="Submit"></td>
+							<td><input class="btn" type="submit" value="Submit"></td>
 						</tr>
 					</table>
 				</form>
@@ -72,10 +72,10 @@
 						<input class="focus" type="password" name="password">
 					</label>
 					<label class="label-textarea">
-						<span>Input Message</span>
+						<span class="label-text">Input Message</span>
 						<textarea class="focus" name="message"></textarea>
 					</label>
-					<input class="submit" type="submit" value="Submit">
+					<input class="btn" type="submit" value="Submit">
 				</form>
 
 			</section>
@@ -89,7 +89,7 @@
 						<label for="password">Password</label>
 						<input id="password" type="password" name="password">
 						<div class="container">
-							<input class="submit" type="submit" value="Log in">
+							<input class="btn" type="submit" value="Log in">
 							<a class="link" href="#">Sign up</a>
 						</div>
 					</form>
@@ -104,19 +104,18 @@
 
 						<span class="fas fa-user fa-lg"><input class="green-border" type="text" name="name"
 								value="John Smith"></span>
-						<!-- <i class="fas fa-user"></i> -->
-					</label>
+										</label>
 					<label>Input your E-mail<input class="blue-border" type="email" name="email"
 							value="smith@corpmail.com"></label>
 					<label class="label-textarea">
-						<span>Input Message</span>
-						<span class="form-5__textarea">
+						<span class="label-text">Input Message</span>
+						<div class="form-5__textarea">
 							<textarea
 								name="message">Hello Dear Admin! I like your site!!! It’s awesome! I am a Nigerian prince and I hope that you...</textarea>
 							<i class="icon-msg"></i>
-						</span>
+						</div>
 					</label>
-					<input class="submit" type="submit" value="Send">
+					<input class="btn btn-style" type="submit" value="Send">
 				</form>
 			</section>
 
@@ -124,43 +123,51 @@
 				<h2>Form 6. Search.</h2>
 
 				<form class="form-6__1">
-					<input type="search" name="search">
-					<input type="submit" value="Search">
+					<!-- Inline-block елементы при переносе образуют пробел-->
+					<input type="search" name="search"><input class="btn" type="submit" value="Search">
 				</form>
 
 				<form class="form-6__2">
-					<input type="search" name="search">
-					<input type="submit" value="">
+					<!-- Inline-block елементы при переносе образуют пробел-->
+					<input type="search" name="search" placeholder="Search..."><label><span class="btn-round"><i class="fas fa-search fa-lg"></i></span>
+						<input type="submit">
+					</label>
 				</form>
 
-				<form>
-					<input type="search" name="search">
+				<form class="form-6__3">
+					<label><i class="fas fa-search"></i><input type="submit">
+					</label>
+					<input type="search" name="search" placeholder="Search...">
 				</form>
 			</section>
 
 			<section>
 				<h2>Form 7. Checkboxes and Radiobuttons.</h2>
 				<form class="form-7">
-					<label><input type="checkbox" name="like"> I like horses</label>
-					<label><input type="checkbox" name="like"> I like unicorns</label>
-					<label><input type="checkbox" name="like" checked> I like pegasus</label>
-					<label><input type="checkbox" name="like" checked disabled> Colored ponies (do not discuss)</label>
+					<div class="block-checkbox">
+						<label><input type="checkbox" name="like"> I like horses</label>
+						<label><input type="checkbox" name="like"> I like unicorns</label>
+						<label><input type="checkbox" name="like" checked> I like pegasus</label>
+						<label><input type="checkbox" name="like" checked disabled> Colored ponies (do not discuss)</label>
+					</div>
 
-					<fieldset>
-						<legend>Animals</legend>
-						<label><input type="radio" name="Animals"> Horse is the best</label>
-						<label><input type="radio" name="Animals"> Unicorn is the best</label>
-						<label><input type="radio" name="Animals"> Pegasus is the best</label>
-						<label><input type="radio" name="Animals"> Sorry, but your turtle was died</label>
-					</fieldset>
+					<div class="block-fieldset clear-fix">
+						<fieldset>
+							<legend>Animals</legend>
+							<label><input type="radio" name="Animals"> Horse is the best</label>
+							<label><input type="radio" name="Animals"> Unicorn is the best</label>
+							<label><input type="radio" name="Animals"> Pegasus is the best</label>
+							<label><input type="radio" name="Animals"> Sorry, but your turtle was died</label>
+						</fieldset>
 
-					<fieldset>
-						<legend>AI</legend>
-						<label><input type="radio" name="Animals"> R2D2</label>
-						<label><input type="radio" name="Animals"> GLaDOS</label>
-						<label><input type="radio" name="Animals"> SkyNet</label>
-						<label><input type="radio" name="Animals"> V.I.K.I.</label>
-					</fieldset>
+						<fieldset class="ai">
+							<legend>AI</legend>
+							<label><input type="radio" name="Animals"> R2D2</label>
+							<label><input type="radio" name="Animals" checked> GLaDOS</label>
+							<label><input type="radio" name="Animals"> SkyNet</label>
+							<label><input type="radio" name="Animals"> V.I.K.I.</label>
+						</fieldset>
+					</div>
 
 					<table>
 						<thead>
