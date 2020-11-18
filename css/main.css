@@ -316,3 +316,22 @@ fieldset.ai {
 	width: 140px;
 	margin-left: 10px;
 }
+
+.block-table {
+	margin-bottom: 30px;
+}
+
+.form-7 .block-table {
+	border-collapse: collapse;
+}
+
+.form-7 table.block-table td {
+	padding: 5px 10px;
+	text-align: center;
+	border: 1px solid #000000;
+}
+
+.form-7 table.block-table td:first-child {
+	padding: ;
+	text-align: left;
+}
