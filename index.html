@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
 			crossorigin="anonymous" />
-		<link rel="stylesheet" href="/css/font.css">
+		<link rel="stylesheet" href="css/font.css">
 		<link rel="stylesheet" href="css/main.css">
 		<title>Document</title>
 	</head>
@@ -16,7 +16,7 @@
 	<body>
 
 		<main class="wrapper">
-
+			<!-------Form 1------->
 			<section>
 				<h2>Form 1. Placeholders.</h2>
 				<form class="form-1">
@@ -27,7 +27,7 @@
 					<input class="btn" type="submit" value="Submit">
 				</form>
 			</section>
-
+			<!-------Form 2------->
 			<section>
 				<h2>Form 2. In Table.</h2>
 				<form class="form-2">
@@ -55,7 +55,7 @@
 					</table>
 				</form>
 			</section>
-
+			<!-------Form 3------->
 			<section>
 				<h2>Form 3. Without table.</h2>
 				<form class="form-3">
@@ -79,7 +79,7 @@
 				</form>
 
 			</section>
-
+			<!-------Form 4------->
 			<section class="fixed-block">
 				<h2>Form 4. In fixed block.</h2>
 				<div class="inner-wrap">
@@ -95,7 +95,7 @@
 					</form>
 				</div>
 			</section>
-
+			<!-------Form 5------->
 			<section>
 				<h2>Form 5. With styles.</h2>
 				<form class="form-5">
@@ -109,8 +109,8 @@
 							value="smith@corpmail.com"></label>
 					<label class="label-textarea">
 						<span class="label-text">Input Message</span>
-						<div class="form-5__textarea">
-							<textarea
+						<div id="form-5__textarea-content resizable" class="form-5__textarea-content">
+							<textarea id="form-5__textarea"
 								name="message">Hello Dear Admin! I like your site!!! It’s awesome! I am a Nigerian prince and I hope that you...</textarea>
 							<i class="icon-msg"></i>
 						</div>
@@ -118,7 +118,7 @@
 					<input class="btn btn-style" type="submit" value="Send">
 				</form>
 			</section>
-
+			<!-------Form 6------->
 			<section>
 				<h2>Form 6. Search.</h2>
 
@@ -141,7 +141,7 @@
 					<input type="search" name="search" placeholder="Search...">
 				</form>
 			</section>
-
+			<!-------Form 7------->
 			<section>
 				<h2>Form 7. Checkboxes and Radiobuttons.</h2>
 				<form class="form-7">
@@ -220,46 +220,127 @@
 						</tbody>
 					</table>
 
-					<h3>Checked</h3>
-					<div class="r-b1">
-						<label><input type="radio" name="r-b1">unchecked</label>
-						<label><input type="radio" name="r-b1" checked>checked</label>
-					</div>
-					<div class="r-b2">
-						<label><input type="radio" name="r-b2">unchecked</label>
-						<label><input type="radio" name="r-b2" checked>checked</label>
-					</div>
-					<div class="ch-b1">
-						<label><input type="checkbox" name="ch-b1">unchecked</label>
-						<label><input type="checkbox" name="ch-b1" checked>checked</label>
-					</div>
-					<div class="ch-b2">
-						<label><input type="checkbox" name="ch-b2">unchecked</label>
-						<label><input type="checkbox" name="ch-b2" checked>checked</label>
+					<div class="radio-style clear-fix">
+						<h3>Checked</h3>
+
+						<div class="wrap">
+
+							<div class="r-b1">
+								<label>
+									<input type="radio" name="r-b1">
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+
+								<label>
+									<input type="radio" name="r-b1" checked>
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+							</div>
+
+							<div class="r-b2">
+								<label>
+									<input type="radio" name="r-b2">
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+
+								<label>
+									<input type="radio" name="r-b2" checked>
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+							</div>
+
+							<div class="ch-b1">
+
+								<label>
+									<input type="checkbox" name="ch-b1">
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+
+								<label>
+									<input type="checkbox" name="ch-b1" checked>
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+							</div>
+
+							<div class="ch-b2">
+
+								<label>
+									<input type="checkbox" name="ch-b2">
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+
+								<label>
+									<input type="checkbox" name="ch-b2" checked>
+									<span class="uchk">unchecked</span>
+									<span class="chk">checked</span>
+								</label>
+							</div>
+						</div>
 					</div>
 
-					<ul>
+					<ul class="radio-list">
 						<li>
-							<label><input type="radio" name="r-list">blue</label>
+							<input id="r-l__i-1" type="radio" name="r-list"><label for="r-l__i-1">blue</label>
 							<ul>
-								<li><label><input type="radio" name="r-sublist">deep blue</label></li>
-								<li><label><input type="radio" name="r-sublist">sky blue</label></li>
+								<li><input id="r-sl__i-1" type="radio" name="r-sublist" disabled><label for="r-sl__i-1">deep
+										blue</label></li>
+								<li><input id="r-sl__i-2" type="radio" name="r-sublist" disabled><label for="r-sl__i-2">sky blue</label>
+								</li>
 							</ul>
 						</li>
-						<li><label><input type="radio" name="r-list" checked>blue</label></li>
+						<li>
+							<input id="r-l__i-2" type="radio" name="r-list" checked><label for="r-l__i-2">blue</label>
+						</li>
 					</ul>
 
 					<div class="radio-style-icon">
-						<label><input type="radio" name="r-s1">unchecked</label>
-						<label><input type="radio" name="r-s1">unchecked</label>
-						<label><input type="radio" name="r-b1" checked>checked</label>
+						<label class="r-s-l">
+							<input type="radio" name="r-s1">
+							<span class="uchk">unchecked</span>
+							<span class="chk">checked</span>
+							<i class="r-s-l__sprite"></i>
+						</label>
+						<label class="r-s-l">
+							<input type="radio" name="r-s1">
+							<span class="uchk">unchecked</span>
+							<span class="chk">checked</span>
+							<i class="r-s-l__sprite"></i>
+						</label>
+						<label class="r-s-l">
+							<input type="radio" name="r-s1" checked>
+							<span class="uchk">unchecked</span>
+							<span class="chk">checked</span>
+							<i class="r-s-l__sprite"></i>
+						</label>
 					</div>
 				</form>
 			</section>
 
-
-
 		</main>
+
+		<!--
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		 <script>
+			function getContent(){
+					document.getElementById("form-5__textarea").value = document.getElementById("form-5__textarea-content").innerText;
+			}
+			  $( function() {
+    $( "#resizable" ).resizable({
+      maxHeight: 250,
+      maxWidth: 350,
+      minHeight: 150,
+      minWidth: 200
+    });
+  } );
+	</script> -->
 
 	</body>
 
