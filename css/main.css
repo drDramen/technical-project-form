@@ -254,9 +254,11 @@ form.form-5 .fa-user::before {
 
 .form-6__2 input[type='submit'],
 .form-6__3 input[type='submit'] {
-	display: none;
-	visibility: hidden;
 	-webkit-appearance: none;
+}
+
+.form-6__3 input[type='submit'] {
+	display: none;
 }
 
 form.form-6__2 .fa-search::before {
@@ -268,12 +270,15 @@ form.form-6__2 .fa-search::before {
 	transform: translate(-50%, -50%);
 }
 
-.btn-round {
+form.form-6__2 label {
 	position: relative;
+	margin-left: 7px;
+}
+
+.btn-round {
 	display: inline-block;
 	width: 46px;
 	height: 46px;
-	margin-left: 7px;
 	vertical-align: middle;
 	background-color: #eeeeee;
 	border: 1px solid #afafaf;
