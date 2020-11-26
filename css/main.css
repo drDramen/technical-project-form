@@ -252,13 +252,23 @@ form.form-5 .fa-user::before {
 	border-radius: 9px;
 }
 
-.form-6__2 input[type='submit'],
-.form-6__3 input[type='submit'] {
+.form-6__2 input[type='submit'] {
+	-moz-appearance: none;
 	-webkit-appearance: none;
+	appearance: none;
 }
 
-.form-6__3 input[type='submit'] {
-	display: none;
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.form-6__3 button {
+	padding: 0;
+	color: inherit;
+	font: inherit;
+	background-color: transparent;
+	border: none;
 }
 
 form.form-6__2 .fa-search::before {
@@ -293,7 +303,7 @@ form.form-6__3 input[type='search'] {
 	padding-left: 30px;
 	border-radius: 9px;
 }
-form.form-6__3 label {
+form.form-6__3 button {
 	position: absolute;
 	top: 50%;
 	left: 6px;
